@@ -1,0 +1,23 @@
+{
+  "name": "dotenv-flow-playground",
+  "version": "1.0.0",
+  "private": true,
+  "main": "cjs/index.js",
+  "dependencies": {
+    "dotenv-flow": "3.3.0-rc.2"
+  },
+  "devDependencies": {
+    "@types/dotenv-flow": "^3.2.0",
+    "@types/node": "18.15.3",
+    "ts-node": "^10.9.1",
+    "typescript": "4.9.5"
+  },
+  "scripts": {
+    "cjs": "node cjs/index.js",
+    "esm": "node esm/index.mjs",
+    "typescript": "ts-node typescript/index.ts",
+    "nodejs-preload": "node -r dotenv-flow/config nodejs-preload/index.js"
+  },
+  "author": "Dan Kerimdzhanov",
+  "license": "MIT"
+}
