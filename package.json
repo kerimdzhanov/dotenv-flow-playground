@@ -15,8 +15,9 @@
   "scripts": {
     "cjs": "node cjs/index.js",
     "esm": "node esm/index.mjs",
-    "typescript": "ts-node typescript/index.ts",
-    "nodejs-preload": "node -r dotenv-flow/config nodejs-preload/index.js"
+    "nodejs-preload": "node -r dotenv-flow/config nodejs-preload/index.js",
+    "ts-import": "ts-node ts/import.ts",
+    "ts-import-config": "ts-node ts/import-config.ts"
   },
   "author": "Dan Kerimdzhanov",
   "license": "MIT"
