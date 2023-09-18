@@ -82,10 +82,10 @@ diff@^4.0.1:
   resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
-dotenv-flow@3.3.0-rc.2:
-  version "3.3.0-rc.2"
-  resolved "https://registry.yarnpkg.com/dotenv-flow/-/dotenv-flow-3.3.0-rc.2.tgz#027607ba6ea7340e9e2ac47f48a3cc7384c19a9c"
-  integrity sha512-On45neENf7JrEYEt87k+dlk2DJe89eabEAdn2C8s+peNwFeHQXPxBJUeBXpi608MN9JR2+X0iijGD3yA+M+aGQ==
+dotenv-flow@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/dotenv-flow/-/dotenv-flow-3.3.0.tgz#e22341c035d5672b923bf76feb35999f728ee456"
+  integrity sha512-GLSvRqDZ1TGhloS6ZCZ5chdqqv/3XMqZxAnX9rliJiHn6uyJLguKeu+3M2kcagBkoVCnLWYfbR4rfFe1xSU39A==
   dependencies:
     dotenv "^8.6.0"
 
