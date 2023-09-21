@@ -1,5 +1,5 @@
 # Node.js dependencies
 /node_modules
 
-# .env*.local files
-.env*.local
+# note that normally `.env*.local` files should be "gitignored" in real projects
+#.env*.local

@@ -1,23 +1,23 @@
 {
   "name": "dotenv-flow-playground",
   "version": "1.0.0",
-  "private": true,
-  "main": "cjs/index.js",
   "dependencies": {
-    "dotenv-flow": "^3.3.0"
+    "dotenv-flow": "^4.0.0-rc.2"
   },
   "devDependencies": {
-    "@types/dotenv-flow": "^3.2.0",
     "@types/node": "18.15.3",
     "ts-node": "^10.9.1",
     "typescript": "4.9.5"
   },
   "scripts": {
-    "cjs": "node cjs/index.js",
-    "esm": "node esm/index.mjs",
-    "nodejs-preload": "node -r dotenv-flow/config nodejs-preload/index.js",
-    "ts-import": "ts-node ts/import.ts",
-    "ts-import-config": "ts-node ts/import-config.ts"
+    "js:require-api": "SYSTEM_ENV_VAR=ok node javascript/require-api.js",
+    "js:import-api": "SYSTEM_ENV_VAR=ok node javascript/import-api.mjs",
+    "js:require-config": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok node javascript/require-config.js",
+    "js:import-config": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok node javascript/import-config.js",
+    "js:preload": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok node -r dotenv-flow/config javascript/preload.js",
+    "ts:import-api": "SYSTEM_ENV_VAR=ok ts-node typescript/import-api.ts",
+    "ts:require-config": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok ts-node typescript/require-config.ts",
+    "ts:preload": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok ts-node -r dotenv-flow/config typescript/preload.ts"
   },
   "author": "Dan Kerimdzhanov",
   "license": "MIT"
