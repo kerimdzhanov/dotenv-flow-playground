@@ -3,9 +3,18 @@
 const dotenvFlow = require('dotenv-flow');
 
 module.exports = {
-  printProcessEnv: function () {
+  printProcessEnv: function (options = {}) {
+    const node_env = (
+      options.node_env ||
+      process.env.NODE_ENV ||
+      options.default_node_env ||
+      'development'
+    );
+
     const filenames = dotenvFlow.listFiles({
-      node_env: process.env.NODE_ENV || 'development'
+      node_env,
+      path: options.path,
+      pattern: options.pattern
     });
 
     const parsed = dotenvFlow.parse(filenames);

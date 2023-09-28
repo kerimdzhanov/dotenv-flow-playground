@@ -16,6 +16,7 @@
     "js:import-config": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok node javascript/import-config.js",
     "js:preload": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok node -r dotenv-flow/config javascript/preload.js",
     "ts:import-api": "SYSTEM_ENV_VAR=ok ts-node typescript/import-api.ts",
+    "ts:custom-pattern": "SYSTEM_ENV_VAR=ok ts-node typescript/custom-pattern.ts",
     "ts:require-config": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok ts-node typescript/require-config.ts",
     "ts:preload": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok ts-node -r dotenv-flow/config typescript/preload.ts"
   },
