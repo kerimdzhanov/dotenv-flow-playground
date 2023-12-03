@@ -2,10 +2,11 @@
   "name": "dotenv-flow-playground",
   "version": "1.0.0",
   "dependencies": {
-    "dotenv-flow": "^4.0.0-rc.3"
+    "dotenv-flow": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "18.15.3",
+    "mocha": "^10.2.0",
     "ts-node": "^10.9.1",
     "typescript": "4.9.5"
   },
@@ -18,7 +19,8 @@
     "ts:import-api": "SYSTEM_ENV_VAR=ok ts-node typescript/import-api.ts",
     "ts:custom-pattern": "SYSTEM_ENV_VAR=ok ts-node typescript/custom-pattern.ts",
     "ts:require-config": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok ts-node typescript/require-config.ts",
-    "ts:preload": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok ts-node -r dotenv-flow/config typescript/preload.ts"
+    "ts:preload": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok ts-node -r dotenv-flow/config typescript/preload.ts",
+    "mocha:preload": "DEFAULT_NODE_ENV=development SYSTEM_ENV_VAR=ok mocha -r dotenv-flow/config mocha/preload.js"
   },
   "author": "Dan Kerimdzhanov",
   "license": "MIT"
